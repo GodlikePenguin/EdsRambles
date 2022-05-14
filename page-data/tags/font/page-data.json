@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx",
+    "path": "/tags/font",
+    "result": {"data":{"allPost":{"nodes":[{"slug":"/some-nice-looking-fonts","title":"Some nice looking fonts","date":"10.02.2022","excerpt":"Just a small list of good looking fonts and colors to give me inspiration later.\nYou can find some cool and interesting repos containing…","timeToRead":1,"description":"Some inspiration for font and colour choices","tags":[{"name":"Web","slug":"web"},{"name":"Design","slug":"design"},{"name":"Font","slug":"font"}]}]}},"pageContext":{"slug":"font","name":"Font","formatString":"DD.MM.YYYY"}},
+    "staticQueryHashes": ["2744905544","3090400250","318001574"]}

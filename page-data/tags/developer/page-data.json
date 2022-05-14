@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx",
+    "path": "/tags/developer",
+    "result": {"data":{"allPost":{"nodes":[{"slug":"/programs-i-cant-live-without","title":"Programs I can't live without","date":"10.02.2022","excerpt":"Some of the things I find on Github are just neat. Some of them I can't imagine life without. This post is dedicated to the latter. Maccy…","timeToRead":1,"description":"Rundown of the programs I use on a daily basis","tags":[{"name":"Linux","slug":"linux"},{"name":"Shell","slug":"shell"},{"name":"Developer","slug":"developer"}]}]}},"pageContext":{"slug":"developer","name":"Developer","formatString":"DD.MM.YYYY"}},
+    "staticQueryHashes": ["2744905544","3090400250","318001574"]}

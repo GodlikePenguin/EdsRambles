@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx",
+    "path": "/tags/rust",
+    "result": {"data":{"allPost":{"nodes":[{"slug":"/its-2022-lets-have-our-cl-is-reflect-that","title":"It's 2022, let's have our CLIs reflect that","date":"10.02.2020","excerpt":"I came across an  interesting article  about some of the more common Unix CLI tools being rewritten in Rust and given a lick of new paint.\nI…","timeToRead":1,"description":"A brief look at some neat utility programs I have been using","tags":[{"name":"Linux","slug":"linux"},{"name":"Rust","slug":"rust"},{"name":"Shell","slug":"shell"}]}]}},"pageContext":{"slug":"rust","name":"Rust","formatString":"DD.MM.YYYY"}},
+    "staticQueryHashes": ["2744905544","3090400250","318001574"]}
