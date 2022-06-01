@@ -1,3 +1,5 @@
+import { AstroComponentFactory } from 'astro/dist/types/runtime/server';
+
 type MarkdownInstance = import('astro').MarkdownInstance<any>;
 // Which mode is the environment running in? https://vitejs.dev/guide/env-and-mode.html#intellisense-for-typescript
 const { MODE } = import.meta.env;
@@ -11,17 +13,20 @@ export type Post = {
 	draft: boolean,
 	date: string,
 	file: URL,
+  Content: AstroComponentFactory,
+  rawContent: string,
 	tags?: string[]
 }
 
 export function single(post: MarkdownInstance): Post {
-	// if the file is called index.md then use the directory name, else use the filename 
-	const slug = (post.file.endsWith('index.md')) 
+	// if the file is called index.md then use the directory name, else use the filename
+	const slug = (post.file.endsWith('index.md'))
 		? post.file.split('/').reverse()[1]
 		: post.file.split('/').reverse()[0].replace('.md', '')
 	return {
 		...post.frontmatter,
 		Content: post.Content,
+    rawContent: post.rawContent(),
 		slug: slug,
 		draft: post.file.includes('drafts'),
 		file: post.file,

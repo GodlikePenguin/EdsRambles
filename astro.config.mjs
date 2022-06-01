@@ -2,8 +2,6 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import { astroImageTools } from "astro-imagetools";
 
-import react from "@astrojs/react";
-
 // https://astro.build/config
 export default defineConfig(
 /** @type {import('astro').AstroUserConfig} */
@@ -23,5 +21,5 @@ export default defineConfig(
   experimental: {
     integrations: true
   },
-  integrations: [sitemap(), astroImageTools, react()]
+  integrations: [sitemap(), astroImageTools]
 });
