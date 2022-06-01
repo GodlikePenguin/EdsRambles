@@ -1,18 +1,27 @@
 ---
-import type { Post } from '@data/post';
+import { getCoverImagePath, Post } from "@data/post"
+import { Img } from "astro-imagetools/components";
+
 const post: Post = Astro.props.post
 ---
 
-<div class="py-6 flex flex-row-reverse gap-6 md:gap-10 items-start">
-	{post.img &&
-		<a href={`/${post.slug}`} class="shrink-0">
-			<img src={post.img} alt={post.title} width="160" height="160" class="w-20 h-20 md:w-40 md:h-40 rounded bg-base-200 object-cover" />
-		</a>
-	}
-	<div class="flex flex-col gap-4">
-		<h2 class="text-2xl font-bold">
-			<a class="hover:underline" href={`/${post.slug}`}>{post.title}</a>
+<div class="card shadow-xl bg-neutral text-neutral-content hover:scale-105 transition-all h-128">
+	<figure class="h-64 overflow-hidden">
+		<Img
+			src={getCoverImagePath(post)} 
+			alt={post.title} 
+		/>
+	</figure>
+	<div class="card-body">
+		<h2 class="card-title text-2xl font-bold">
+			<a class="hover:underline" href={`/posts/${post.slug}`}>
+				<span class="text-inherit/[.05]">{post.draft && "Draft: "}</span>
+				{post.title}
+			</a>
 		</h2>
-		<p class="text-sm text-base-content/70">{post.desc}</p>
+		<p class="text-sm text-base-content/70">{post.description}</p>
+		<div class="card-actions justify-end">
+			{post.tags?.map(tag => <div class="badge badge-outline"># {tag}</div>)}
+		</div>
 	</div>
 </div>
