@@ -1,0 +1,21 @@
+---
+import Subtitle from "@components/utilities/Subtitle";
+import { published } from "@data/post"
+import Blog from "@layouts/Blog";
+
+const markdownFiles = await Astro.glob('../../content/**/*.md')
+const posts = published( markdownFiles );
+const tags = posts.flatMap(p => p.tags ?? []);
+const uniqueTags = Array.from(new Set(tags));
+---
+
+<Blog>
+	<Subtitle>Tags</Subtitle>
+	<div class="grid grid-cols-4 gap-6 mt-8">
+		{uniqueTags.map(t => {
+			return <a class="card shadow-xl bg-base-300 hover:scale-105 transition-all p-8 text-xl font-bold" href={`/tags/${t}`}>
+				{t}
+			</a>
+		})}
+	</div>
+</Blog>

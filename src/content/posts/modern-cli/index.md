@@ -1,6 +1,6 @@
 ---
 title: It's 2022, let's have our CLIs reflect that
-date: 2020-02-10
+date: 2020-06-06
 description: A brief look at some neat utility programs I have been using
 tags:
   - Linux

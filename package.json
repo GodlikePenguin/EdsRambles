@@ -1,13 +1,14 @@
 {
-  "name": "daisy-blog",
-  "version": "0.1.0",
+  "name": "eds-rambles",
+  "version": "2.0.0",
   "private": false,
   "scripts": {
     "dev": "astro dev",
     "dev:network": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "preview:network": "astro preview --host"
   },
   "devDependencies": {
     "@astrojs/sitemap": "^0.1.0",

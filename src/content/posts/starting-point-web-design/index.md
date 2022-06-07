@@ -1,7 +1,7 @@
 ---
-title: Some nice looking fonts
-date: 2022-02-10
-description: Some inspiration for font and colour choices
+title: Some starting points for designing on the web
+date: 2022-06-06
+description: Some inspiration for designing new sites on the web
 setup: |
   import FontPreview from "../../../components/utilities/FontPreview.astro"
 tags:
@@ -10,11 +10,12 @@ tags:
   - Font
 ---
 
-Just a small list of good looking fonts and colors to give me inspiration later.
-You can find some cool and interesting repos containing fonts or design documentation [here](https://github.com/topics/fonts)
+Sometimes you come across some resources you'd love to use in a new website or other project but never get around to it.
+This post just contains some 
 
+For further inspiration check out the [`design`](https://github.com/topics/design), [`font`](https://github.com/topics/fonts) and [`color-scheme`](https://github.com/topics/color-scheme) Github topics.
 
-## Sans
+## Fonts - Sans
 
 <FontPreview fontFamily="Product Sans" />
 <FontPreview fontFamily="Proxima Nova" />
@@ -29,12 +30,14 @@ You can find some cool and interesting repos containing fonts or design document
 
 ---
 
-## Serif
+## Fonts - Serif
 <FontPreview fontFamily="Playfair" />
 <FontPreview fontFamily="Merriweather" />
 <FontPreview fontFamily="Noto" />
 
+---
+
 ## Colours
-- http://wideopentech.com/blog/2017/05/05/designing-consistent-ui-part-1-color-palettes/
+- https://github.com/Siddharth11/Colorful
 - http://khroma.co/
 

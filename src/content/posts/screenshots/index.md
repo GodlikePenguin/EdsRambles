@@ -1,6 +1,6 @@
 ---
 title: Taking nice looking screenshots
-date: 2022-02-10
+date: 2022-06-06
 description: Quick guide on how to make your stuff look pretty
 tags:
   - Linux

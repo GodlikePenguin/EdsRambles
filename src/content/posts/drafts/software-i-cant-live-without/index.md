@@ -1,6 +1,6 @@
 ---
 title: Software I can't live without
-date: 2022-02-10
+date: 2022-06-06
 description: Rundown of the software I use on a daily basis
 tags:
   - Linux

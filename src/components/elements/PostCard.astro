@@ -15,13 +15,12 @@ const post: Post = Astro.props.post
 	<div class="card-body">
 		<h2 class="card-title text-2xl text-base-content font-bold">
 			<a class="hover:underline" href={`/posts/${post.slug}`}>
-				<span class="text-inherit/[.05]">{post.draft && "Draft: "}</span>
-				{post.title}
+				<span class="inline-block text-base-content/70">{post.draft && "Draft: "}</span>{post.title}
 			</a>
 		</h2>
 		<p class="text-sm text-base-content/70">{post.description}</p>
 		<div class="card-actions justify-end">
-			{post.tags?.map(tag => <div class="badge badge-outline"># {tag}</div>)}
+			{post.tags?.map(tag => <a class="badge badge-outline hover:badge" href={`/tags/${tag}`}># {tag}</a>)}
 		</div>
 	</div>
 </div>
