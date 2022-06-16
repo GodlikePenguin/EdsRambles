@@ -17,7 +17,7 @@ export default defineConfig(
       wrap: false
     }
   },
-  site: 'https://edsrambles.pages.dev/',
+  site: 'https://blog.rddobson.com/',
   experimental: {
     integrations: true
   },
