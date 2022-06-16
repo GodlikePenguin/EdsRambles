@@ -17,8 +17,7 @@ export default defineConfig(
       wrap: false
     }
   },
-  site: 'https://godlikepenguin.github.io/',
-  base: 'EdsRambles',
+  site: 'https://edsrambles.pages.dev/',
   experimental: {
     integrations: true
   },
