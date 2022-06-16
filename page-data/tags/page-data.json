@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx",
-    "path": "/tags",
-    "result": {"data":{"allPost":{"group":[{"fieldValue":"Design","totalCount":2},{"fieldValue":"Developer","totalCount":1},{"fieldValue":"Font","totalCount":1},{"fieldValue":"Linux","totalCount":3},{"fieldValue":"Rust","totalCount":1},{"fieldValue":"Shell","totalCount":3},{"fieldValue":"Web","totalCount":3}]}},"pageContext":{}},
-    "staticQueryHashes": ["2744905544","3090400250","318001574"]}

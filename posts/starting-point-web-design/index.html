@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- essential -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<!-- core -->
+	<title>Some starting points for designing on the web</title>
+	<meta name="description" content="Rambles from my exploration on the internet">
+	<!-- twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Some starting points for designing on the web">
+	<meta name="twitter:description" content="Rambles from my exploration on the internet">
+	<meta name="twitter:image" content="http://0.0.0.0:3000/card.png">
+	<meta name="twitter:image:alt" content="Some starting points for designing on the web">
+	
+	
+	<!-- og -->
+	<meta property="og:title" content="Some starting points for designing on the web">
+	<meta property="og:description" content="Rambles from my exploration on the internet">
+	<meta property="og:image" content="http://0.0.0.0:3000/card.png">
+	<meta property="og:image:alt" content="Some starting points for designing on the web">
+	<meta property="og:site_name" content="Some starting points for designing on the web">
+	<meta property="og:type" content="object">
+	<meta property="og:url" content="http://0.0.0.0:3000/">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/asset.aadf2d7f.css"></link>
+<link rel="stylesheet" href="/assets/asset.3141d6d8.css"></link><script type="module" src="/entry.cb4afb76.js"></script>
+</head>
+
+
+<body class="flex flex-col items-center h-screen">
+	<div class="w-full max-w-5xl flex-grow">
+		<div class="navbar bg-base-100">
+  <div class="flex-1">
+    <a href="/" class="p-2 hover:border-b md:text-4xl font-bold flex gap-4 items-center mb-px hover:mb-0">
+      <span class="inline-block">💬</span>
+      Ed's Rambles
+    </a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal p-0 hidden md:flex">
+      <li>
+        <a href="/tags">Tags</a>
+      </li><li>
+        <a href="/snippets">Snippets</a>
+      </li>
+    </ul>
+    <label class="btn btn-square btn-ghost swap swap-rotate" id="theme-wrapper">
+  <!-- These icons cycle between them based on the swap status -->
+  <svg class="swap-off fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"></path>
+  </svg>
+  <svg class="swap-on fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"></path>
+  </svg>
+</label>
+
+
+    <div class="dropdown dropdown-end md:hidden">
+      <label tabindex="0" class="btn btn-ghost btn-square">
+        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </label>
+      <ul tabindex="0" class="dropdown-content menu p-2 bg-base-200 rounded-box w-52 menu-compact">
+        <li>
+          <a href="/tags">Tags</a>
+        </li><li>
+          <a href="/snippets">Snippets</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+		<div class="p-4 pb-10">
+			<div class="flex justify-center astro-AR5NVEQ7">
+		<div class="py-6 prose lg:prose-lg astro-AR5NVEQ7">
+			<figure class="flex justify-center rounded bg-base-200 overflow-hidden astro-AR5NVEQ7">
+				<style >
+        .astro-imagetools-img-FFA82CEF {
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+
+        .astro-imagetools-img-FFA82CEF {
+          background-size: cover;
+          background-image: url("data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQHAwX/xAAlEAABAwMCBgMAAAAAAAAAAAABAgMEAAURBhITITFBUWGBocH/xAAWAQEBAQAAAAAAAAAAAAAAAAAFAwf/xAAlEQABAgUBCQAAAAAAAAAAAAABAgMABBEhIgUSFBUxUXGBkaH/2gAMAwEAAhEDEQA/AFrRoaI5hqVOQ8tIyppkAEfJyfqnLho+yOxTHaZcZc7PKJVg+CD2rS3RHWTFSuSooilPDLY2KOOm45wffIZrrXe4OMxHnm0I4qU5BIzWcv6lNKeGw8VdsRWvSl/I9w83LICckU+xF7zo2XDnraSy9jrlrcUn2MUVRY92ekspdWAFEqHI+FEflFL8dmUYrQKjneIbi2bg2j//2Q==");
+          background-position: 50% 50%;
+        }
+      </style><img
+    
+    src="/assets/cover@3840w.5cbbae38.jpeg"
+    alt="Some starting points for designing on the web"
+    srcset="/assets/cover@320w.7e98d0e9.jpeg 320w, /assets/cover@1024w.52d383f6.jpeg 1024w, /assets/cover@1650w.22b688a9.jpeg 1650w, /assets/cover@2197w.71ae14e2.jpeg 2197w, /assets/cover@2667w.e39055fb.jpeg 2667w, /assets/cover@3058w.b3a9fe69.jpeg 3058w, /assets/cover@3371w.f1760e0a.jpeg 3371w, /assets/cover@3605w.657cff22.jpeg 3605w, /assets/cover@3762w.469b8e4d.jpeg 3762w, /assets/cover@3840w.5cbbae38.jpeg 3840w"
+    sizes="(min-width: 3840px) 3840px, 100vw"
+    width="3840"
+    height="2565"
+    loading="lazy"
+    decoding="async"
+    class="astro-imagetools-img astro-imagetools-img-FFA82CEF"
+    style="display: inline-block; overflow: hidden; vertical-align: middle; ; max-width: 100%; height: auto;"
+    onload=""
+  />
+
+			</figure>
+			<h1 class="astro-AR5NVEQ7">Some starting points for designing on the web</h1>
+			<div class="flex gap-3 astro-AR5NVEQ7">
+				<span class="badge badge-ghost astro-AR5NVEQ7">
+					<time datetime="2022-06-06T00:00:00.000Z">6 June 2022</time>
+				</span>
+				<span class="badge badge-ghost astro-AR5NVEQ7">
+					1 minutes
+				</span>
+			</div>
+			<div class="astro-AR5NVEQ7">
+				<p>Sometimes you come across some resources you’d love to use in a new website or other project but never get around to it.
+This post just contains some</p>
+<p>For further inspiration check out the <a href="https://github.com/topics/design"><code>design</code></a>, <a href="https://github.com/topics/fonts"><code>font</code></a> and <a href="https://github.com/topics/color-scheme"><code>color-scheme</code></a> Github topics.</p>
+<h2 id="fonts---sans"><a aria-hidden="true" tabindex="-1" href="#fonts---sans"><span class="icon icon-link"></span></a>Fonts - Sans</h2>
+<div style="font-family: Product Sans;">
+    <p class="font-bold text-xl">Product Sans</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Proxima Nova;">
+    <p class="font-bold text-xl">Proxima Nova</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Manrope;">
+    <p class="font-bold text-xl">Manrope</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Open Sans;">
+    <p class="font-bold text-xl">Open Sans</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Montserrat;">
+    <p class="font-bold text-xl">Montserrat</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Lato;">
+    <p class="font-bold text-xl">Lato</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Noto Sans;">
+    <p class="font-bold text-xl">Noto Sans</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: PT Sans;">
+    <p class="font-bold text-xl">PT Sans</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Poppins;">
+    <p class="font-bold text-xl">Poppins</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Quicksand;">
+    <p class="font-bold text-xl">Quicksand</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<hr>
+<h2 id="fonts---serif"><a aria-hidden="true" tabindex="-1" href="#fonts---serif"><span class="icon icon-link"></span></a>Fonts - Serif</h2>
+<div style="font-family: Playfair;">
+    <p class="font-bold text-xl">Playfair</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Merriweather;">
+    <p class="font-bold text-xl">Merriweather</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<div style="font-family: Noto;">
+    <p class="font-bold text-xl">Noto</p>
+    <textarea class="textarea textarea-bordered w-full text-lg" placeholder="The quick brown fox jumps over the lazy dog"></textarea>
+</div>
+<hr>
+<h2 id="colours"><a aria-hidden="true" tabindex="-1" href="#colours"><span class="icon icon-link"></span></a>Colours</h2>
+<ul>
+<li><a href="https://github.com/Siddharth11/Colorful">https://github.com/Siddharth11/Colorful</a></li>
+<li><a href="http://khroma.co/">http://khroma.co/</a></li>
+</ul>
+			</div>
+		</div>
+	</div>
+		</div>
+	</div>
+	<footer class="footer items-center p-4 bg-neutral text-neutral-content">
+  <div class="items-center grid-flow-col">
+    <p>Copyright © 2022 - All rights reserved</p>
+  </div>
+  <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+    <a href="https://github.com/GodlikePenguin" class="h-8 w-8">
+      <svg style="filter:invert(90%)" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>GitHub</title>
+        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+</body></html>
+

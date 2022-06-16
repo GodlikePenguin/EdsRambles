@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- essential -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<!-- core -->
+	<title>It&#39;s 2022, let&#39;s have our CLIs reflect that</title>
+	<meta name="description" content="Rambles from my exploration on the internet">
+	<!-- twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="It's 2022, let's have our CLIs reflect that">
+	<meta name="twitter:description" content="Rambles from my exploration on the internet">
+	<meta name="twitter:image" content="http://0.0.0.0:3000/card.png">
+	<meta name="twitter:image:alt" content="It's 2022, let's have our CLIs reflect that">
+	
+	
+	<!-- og -->
+	<meta property="og:title" content="It's 2022, let's have our CLIs reflect that">
+	<meta property="og:description" content="Rambles from my exploration on the internet">
+	<meta property="og:image" content="http://0.0.0.0:3000/card.png">
+	<meta property="og:image:alt" content="It's 2022, let's have our CLIs reflect that">
+	<meta property="og:site_name" content="It's 2022, let's have our CLIs reflect that">
+	<meta property="og:type" content="object">
+	<meta property="og:url" content="http://0.0.0.0:3000/">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/asset.3141d6d8.css"></link>
+<link rel="stylesheet" href="/assets/asset.aadf2d7f.css"></link><script type="module" src="/entry.cb4afb76.js"></script>
+</head>
+
+
+<body class="flex flex-col items-center h-screen">
+	<div class="w-full max-w-5xl flex-grow">
+		<div class="navbar bg-base-100">
+  <div class="flex-1">
+    <a href="/" class="p-2 hover:border-b md:text-4xl font-bold flex gap-4 items-center mb-px hover:mb-0">
+      <span class="inline-block">💬</span>
+      Ed's Rambles
+    </a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal p-0 hidden md:flex">
+      <li>
+        <a href="/tags">Tags</a>
+      </li><li>
+        <a href="/snippets">Snippets</a>
+      </li>
+    </ul>
+    <label class="btn btn-square btn-ghost swap swap-rotate" id="theme-wrapper">
+  <!-- These icons cycle between them based on the swap status -->
+  <svg class="swap-off fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"></path>
+  </svg>
+  <svg class="swap-on fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"></path>
+  </svg>
+</label>
+
+
+    <div class="dropdown dropdown-end md:hidden">
+      <label tabindex="0" class="btn btn-ghost btn-square">
+        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </label>
+      <ul tabindex="0" class="dropdown-content menu p-2 bg-base-200 rounded-box w-52 menu-compact">
+        <li>
+          <a href="/tags">Tags</a>
+        </li><li>
+          <a href="/snippets">Snippets</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+		<div class="p-4 pb-10">
+			<div class="flex justify-center astro-AR5NVEQ7">
+		<div class="py-6 prose lg:prose-lg astro-AR5NVEQ7">
+			<figure class="flex justify-center rounded bg-base-200 overflow-hidden astro-AR5NVEQ7">
+				<style >
+        .astro-imagetools-img-DB7C6D2A {
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+
+        .astro-imagetools-img-DB7C6D2A {
+          background-size: cover;
+          background-image: url("data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgAF/8QAJhAAAQQCAAUEAwAAAAAAAAAAAQIDBBEAIQUGEiJBEyMxUUKhsf/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/EABkRAQACAwAAAAAAAAAAAAAAAAABEQISIf/aAAwDAQACEQMRAD8AHr5hhmOnphPIQNEPsnpo7o19eD9awtxJDCluqCGVpPd2Wkps/FHXnEM7mRubGEMx1pZKA3al7IA80PO8y+HvvxA9JgoRGStv07AC7IN/lZBxdeINOxKXogAgGt6/WWbE6bOXIKlzHrIBHuEfzLDpucZt/9k=");
+          background-position: 50% 50%;
+        }
+      </style><img
+    
+    src="/assets/cover@3840w.76c075bf.jpeg"
+    alt="It's 2022, let's have our CLIs reflect that"
+    srcset="/assets/cover@320w.2236848d.jpeg 320w, /assets/cover@1024w.0e978f7b.jpeg 1024w, /assets/cover@1650w.faca4556.jpeg 1650w, /assets/cover@2197w.58690d28.jpeg 2197w, /assets/cover@2667w.b05556dd.jpeg 2667w, /assets/cover@3058w.8e10d8ab.jpeg 3058w, /assets/cover@3371w.f3d13417.jpeg 3371w, /assets/cover@3605w.0f588ac8.jpeg 3605w, /assets/cover@3762w.b7720dfa.jpeg 3762w, /assets/cover@3840w.76c075bf.jpeg 3840w"
+    sizes="(min-width: 3840px) 3840px, 100vw"
+    width="3840"
+    height="2880"
+    loading="lazy"
+    decoding="async"
+    class="astro-imagetools-img astro-imagetools-img-DB7C6D2A"
+    style="display: inline-block; overflow: hidden; vertical-align: middle; ; max-width: 100%; height: auto;"
+    onload=""
+  />
+
+			</figure>
+			<h1 class="astro-AR5NVEQ7">It&#39;s 2022, let&#39;s have our CLIs reflect that</h1>
+			<div class="flex gap-3 astro-AR5NVEQ7">
+				<span class="badge badge-ghost astro-AR5NVEQ7">
+					<time datetime="2020-06-06T00:00:00.000Z">6 June 2020</time>
+				</span>
+				<span class="badge badge-ghost astro-AR5NVEQ7">
+					1 minutes
+				</span>
+			</div>
+			<div class="astro-AR5NVEQ7">
+				<p>I came across an <a href="https://zaiste.net/posts/shell-commands-rust/">interesting article</a> about some of the more common Unix CLI tools being rewritten in Rust and given a lick of new paint.
+I had been using some of these tools before reading the article and I have definitely noticed the benefits they have over the traditional implementations.</p>
+<h3 id="bat"><a aria-hidden="true" tabindex="-1" href="#bat"><span class="icon icon-link"></span></a><a href="https://github.com/sharkdp/bat"><code>bat</code></a></h3>
+<p><code>bat</code> is a replacement for <code>cat</code> but with some neat additions such as</p>
+<ul>
+<li>syntax highlighting</li>
+<li>git integration (additions and deletions)</li>
+<li>the output format is conditional, e.g. if the height of the output is greater than your terminal height then it will be piped into <code>less</code></li>
+</ul>
+<p><style >
+    
+
+    .astro-imagetools-picture-9E17F7A8 {
+      --opacity: 1;
+      --z-index: 0;
+    }
+
+    
+            .astro-imagetools-picture-9E17F7A8 img {
+              z-index: 1;
+              position: relative;
+            }
+          
+
+    .astro-imagetools-picture-9E17F7A8::after {
+      inset: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: opacity 1s;
+      opacity: var(--opacity);
+      z-index: var(--z-index);
+    }
+  
+        .astro-imagetools-picture-9E17F7A8 img {
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+
+        .astro-imagetools-picture-9E17F7A8::after {
+          background-size: cover;
+          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABYklEQVQokZ1T2W7DIBD0zzThsDE+ABtfiZVEcdJWaqX+/4dEYipsJ42rplL7MJoVsMPuLARcGVBmHGEaT+sMK5JjTdVf4Wa+BEnWOW13aLoBhd1ByAqEKfgL/gjnRQPONYrYOm16ZGqDUNj/CDrPvtJRMA8N0qxCFBdYkamNK4+4xWPSz2DTXkC5AYkKhEkBEvrKFPwaj0qwsABbxNPeXM2twvUcT4L+YFKjaHq0+zO6bkDVHJGpLaK4ghAl0nwzeiujDDyu4HMeChK/SBWMKNFvX7A7vKFuB6R5PVrgIeTEhJnbK/guRBaCTCPhGpv+GafzBw7HdxyHV+wPJ+iigTI1MuU9LqfEOfke5MtDDcq0Y0wjljVyvYVMW8jEIlM1ZGoRJyWELEdmoVm0u5xy7gImKkcjCxrNt1Pf0tTWYtJ3lTx6Ot6OgCYb0KRzVLZgwoKH3it/4Jo8Tf6K337KiuSXT656VsRe96ZiAAAAAElFTkSuQmCC");
+          background-position: 50% 50%;
+        }
+      </style><picture
+    
+    class="astro-imagetools-picture astro-imagetools-picture-9E17F7A8"
+    style="position: relative; display: inline-block; ; max-width: 100%; height: auto;"
+    ><source
+            srcset="/assets/bat@320w.b9f294ba.avif 320w, /assets/bat@777w.7f3182d8.avif 777w, /assets/bat@1158w.8dee5caa.avif 1158w, /assets/bat@1463w.efb36694.avif 1463w, /assets/bat@1691w.66ac93d6.avif 1691w, /assets/bat@1844w.00bee8f4.avif 1844w, /assets/bat@1920w.88ff85c5.avif 1920w"
+            sizes="(min-width: 1920px) 1920px, 100vw"
+            width="1920"
+            height="1012"
+            type="image/avif"
+            
+          />
+<source
+            srcset="/assets/bat@320w.aad84503.webp 320w, /assets/bat@777w.3c4b3475.webp 777w, /assets/bat@1158w.fe3dcf32.webp 1158w, /assets/bat@1463w.eb004bc8.webp 1463w, /assets/bat@1691w.36e7fe7c.webp 1691w, /assets/bat@1844w.05f5c5c3.webp 1844w, /assets/bat@1920w.d22a2cd0.webp 1920w"
+            sizes="(min-width: 1920px) 1920px, 100vw"
+            width="1920"
+            height="1012"
+            type="image/webp"
+            
+          />
+<img
+    
+    src="/assets/bat@1920w.55a684e7.png"
+    alt="bat in action"
+    srcset="/assets/bat@320w.bae86e31.png 320w, /assets/bat@777w.3276d749.png 777w, /assets/bat@1158w.1da10d92.png 1158w, /assets/bat@1463w.029c4a7c.png 1463w, /assets/bat@1691w.f9a8a139.png 1691w, /assets/bat@1844w.a9bb0106.png 1844w, /assets/bat@1920w.55a684e7.png 1920w"
+    sizes="(min-width: 1920px) 1920px, 100vw"
+    width="1920"
+    height="1012"
+    loading="lazy"
+    decoding="async"
+    class="astro-imagetools-img"
+    style="display: inline-block; overflow: hidden; vertical-align: middle; ; max-width: 100%; height: auto;"
+    onload="parentElement.style.setProperty('--z-index', 1);parentElement.style.setProperty('--opacity', 0);"
+  />
+  </picture>
+</p>
+<h3 id="fd"><a aria-hidden="true" tabindex="-1" href="#fd"><span class="icon icon-link"></span></a><a href="https://github.com/sharkdp/fd"><code>fd</code></a></h3>
+<p>Not much to say about <code>fd</code>, it’s a replacement for <code>find</code> but without the clunky syntax. Instead of having to use <code>find -iname ‘*PATTERN*’</code>, now it’s as simple as <code>fd PATTERN</code>.
+Another neat addition is that <code>fd</code> respects your <code>.gitignore</code> file, so it doesn’t waste time combing through your node_modules.</p>
+<p><style >
+    
+
+    .astro-imagetools-picture-A6A5060A {
+      --opacity: 1;
+      --z-index: 0;
+    }
+
+    
+            .astro-imagetools-picture-A6A5060A img {
+              z-index: 1;
+              position: relative;
+            }
+          
+
+    .astro-imagetools-picture-A6A5060A::after {
+      inset: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: opacity 1s;
+      opacity: var(--opacity);
+      z-index: var(--z-index);
+    }
+  
+        .astro-imagetools-picture-A6A5060A img {
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+
+        .astro-imagetools-picture-A6A5060A::after {
+          background-size: cover;
+          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAr0lEQVQoka2S3QrCMAyF+zRN2o2qXbspQ1Fv1EvBd9j7Xw8SaXQwBXF/F4dDaDj90lThumANgcAEBhOnitCWyVu1qi6UF2fOXM02q1gObCk+VGBickqu4r3hUN9o4/ds822/YQohKXd6sNtd2ccj++LwETiSkIUQbWTMKhmzu3FsKPQDpXire7uZhOXPhqFh8B04lugvIZgoK5/7DzUGSoFSLCDSGF5LWYIwucbQPgFCEVB59kySUAAAAABJRU5ErkJggg==");
+          background-position: 50% 50%;
+        }
+      </style><picture
+    
+    class="astro-imagetools-picture astro-imagetools-picture-A6A5060A"
+    style="position: relative; display: inline-block; ; max-width: 100%; height: auto;"
+    ><source
+            srcset="/assets/fd@320w.1cd9379a.avif 320w, /assets/fd@777w.1f4fea50.avif 777w, /assets/fd@1158w.2b3eb2f0.avif 1158w, /assets/fd@1463w.8d593f94.avif 1463w, /assets/fd@1691w.4a7e3fa1.avif 1691w, /assets/fd@1844w.76229109.avif 1844w, /assets/fd@1920w.a5e90501.avif 1920w"
+            sizes="(min-width: 1920px) 1920px, 100vw"
+            width="1920"
+            height="1012"
+            type="image/avif"
+            
+          />
+<source
+            srcset="/assets/fd@320w.1cf88933.webp 320w, /assets/fd@777w.01590a9e.webp 777w, /assets/fd@1158w.66175e48.webp 1158w, /assets/fd@1463w.2ae8664a.webp 1463w, /assets/fd@1691w.a4529e9d.webp 1691w, /assets/fd@1844w.db0092a9.webp 1844w, /assets/fd@1920w.8e621f56.webp 1920w"
+            sizes="(min-width: 1920px) 1920px, 100vw"
+            width="1920"
+            height="1012"
+            type="image/webp"
+            
+          />
+<img
+    
+    src="/assets/fd@1920w.a593b6c6.png"
+    alt="fd in action"
+    srcset="/assets/fd@320w.043fbba0.png 320w, /assets/fd@777w.56b1ee41.png 777w, /assets/fd@1158w.1c015dca.png 1158w, /assets/fd@1463w.4a6fcc7b.png 1463w, /assets/fd@1691w.f378cc86.png 1691w, /assets/fd@1844w.425618bd.png 1844w, /assets/fd@1920w.a593b6c6.png 1920w"
+    sizes="(min-width: 1920px) 1920px, 100vw"
+    width="1920"
+    height="1012"
+    loading="lazy"
+    decoding="async"
+    class="astro-imagetools-img"
+    style="display: inline-block; overflow: hidden; vertical-align: middle; ; max-width: 100%; height: auto;"
+    onload="parentElement.style.setProperty('--z-index', 1);parentElement.style.setProperty('--opacity', 0);"
+  />
+  </picture>
+</p>
+<h3 id="tealdeer"><a aria-hidden="true" tabindex="-1" href="#tealdeer"><span class="icon icon-link"></span></a><a href="https://github.com/dbrgn/tealdeer"><code>tealdeer</code></a></h3>
+<p>I haven’t specifically used <code>tealdeer</code>, but any tool that aims to improve the wonderful <a href="https://github.com/tldr-pages/tldr"><code>tldr</code></a> is great in my book.</p>
+<p><style >
+    
+
+    .astro-imagetools-picture-4F6263AF {
+      --opacity: 1;
+      --z-index: 0;
+    }
+
+    
+            .astro-imagetools-picture-4F6263AF img {
+              z-index: 1;
+              position: relative;
+            }
+          
+
+    .astro-imagetools-picture-4F6263AF::after {
+      inset: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: opacity 1s;
+      opacity: var(--opacity);
+      z-index: var(--z-index);
+    }
+  
+        .astro-imagetools-picture-4F6263AF img {
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+
+        .astro-imagetools-picture-4F6263AF::after {
+          background-size: cover;
+          background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABGklEQVQokaWT/Y6DIBDEeRqBBT8QFcGrNd6l9/7P08S5oNeqje1d0j9+WQjZ2SEMTBiLhFcTlzXeYBLUxHplubtMaf0JkfegNICUO2yKDc/gy/lsilk3QmVhktqDZlpIcpBq5dZ0NITvHU7MVD0y0yG3J5j6jLgvIra/r1PTgasGQruV1Rm2lRV1Bx1GUHOCNA7StKDKQ1oPsh6y/MV4yKIFlX5G6CeCpQ1I2zN0d4EOX1BugPYjyIZF0Pj1amLD/sq4C1Y2IGt66I/vWVS5EWTC4ipvF2dRVK1OHh4DO0FdDiAzQJoBlHVQ2u9cHDl6FOVbQR5jQs38SoJqiBcR+UcOJyZkvQ/1i7z9lcNEVGC3Ce/+lFgTUV1/ABnJU0UAExJDAAAAAElFTkSuQmCC");
+          background-position: 50% 50%;
+        }
+      </style><picture
+    
+    class="astro-imagetools-picture astro-imagetools-picture-4F6263AF"
+    style="position: relative; display: inline-block; ; max-width: 100%; height: auto;"
+    ><source
+            srcset="/assets/tldr@320w.2253cb6d.avif 320w, /assets/tldr@777w.7787f20b.avif 777w, /assets/tldr@1158w.b715d7a8.avif 1158w, /assets/tldr@1463w.eb7bde3a.avif 1463w, /assets/tldr@1691w.42a706b0.avif 1691w, /assets/tldr@1844w.ce0bd731.avif 1844w, /assets/tldr@1920w.c37c8cff.avif 1920w"
+            sizes="(min-width: 1920px) 1920px, 100vw"
+            width="1920"
+            height="1012"
+            type="image/avif"
+            
+          />
+<source
+            srcset="/assets/tldr@320w.e492d345.webp 320w, /assets/tldr@777w.bf49713b.webp 777w, /assets/tldr@1158w.62bcd757.webp 1158w, /assets/tldr@1463w.ce98dcd9.webp 1463w, /assets/tldr@1691w.68aa6820.webp 1691w, /assets/tldr@1844w.e7d983c9.webp 1844w, /assets/tldr@1920w.efa75059.webp 1920w"
+            sizes="(min-width: 1920px) 1920px, 100vw"
+            width="1920"
+            height="1012"
+            type="image/webp"
+            
+          />
+<img
+    
+    src="/assets/tldr@1920w.d450cfae.png"
+    alt="tldr in action"
+    srcset="/assets/tldr@320w.5bdd2bb1.png 320w, /assets/tldr@777w.d466fb73.png 777w, /assets/tldr@1158w.94f2d332.png 1158w, /assets/tldr@1463w.65f16ea6.png 1463w, /assets/tldr@1691w.7ab6ce22.png 1691w, /assets/tldr@1844w.c27753c4.png 1844w, /assets/tldr@1920w.d450cfae.png 1920w"
+    sizes="(min-width: 1920px) 1920px, 100vw"
+    width="1920"
+    height="1012"
+    loading="lazy"
+    decoding="async"
+    class="astro-imagetools-img"
+    style="display: inline-block; overflow: hidden; vertical-align: middle; ; max-width: 100%; height: auto;"
+    onload="parentElement.style.setProperty('--z-index', 1);parentElement.style.setProperty('--opacity', 0);"
+  />
+  </picture>
+</p>
+<hr>
+<p>Read the <a href="https://zaiste.net/posts/shell-commands-rust/">full article</a> for more modern CLI rewrites.</p>
+			</div>
+		</div>
+	</div>
+		</div>
+	</div>
+	<footer class="footer items-center p-4 bg-neutral text-neutral-content">
+  <div class="items-center grid-flow-col">
+    <p>Copyright © 2022 - All rights reserved</p>
+  </div>
+  <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+    <a href="https://github.com/GodlikePenguin" class="h-8 w-8">
+      <svg style="filter:invert(90%)" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <title>GitHub</title>
+        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+</body></html>
+
