@@ -4,11 +4,9 @@ import Date from "@components/utilities/Date";
 import { published, getRSS, getCoverImagePath } from "@data/post"
 import { Img } from "astro-imagetools/components";
 
-import readingTime from 'reading-time';
-
 export async function getStaticPaths({ rss }) {
 	const markdownFiles = await Astro.glob('../../content/**/*.md');
-	const posts = published( markdownFiles );
+	const posts = published(markdownFiles);
 
 	rss(getRSS(markdownFiles));
 
@@ -28,19 +26,16 @@ const { post: { Content }, post } = Astro.props;
 	<div class="flex justify-center">
 		<div class="py-6 prose lg:prose-lg">
 			<figure class="flex justify-center rounded bg-base-200 overflow-hidden">
-				<Img
-					src={getCoverImagePath(post)}
-					alt={post.title}
-				/>
+				<Img src={getCoverImagePath(post)} alt={post.title} />
 			</figure>
-			<h1>{post.title}</h1>
+			<h1>{post.draft && <span class="inline-block text-base-content/70 draft">Draft: </span>}{post.title}</h1>
 			<div class="flex gap-3">
 				<span class="badge badge-ghost">
-					<Date date={post.date}/>
+					<Date date={post.date} />
 				</span>
-        <span class="badge badge-ghost">
-          {Math.ceil(readingTime(post.rawContent).minutes)} minutes
-        </span>
+				<span class="badge badge-ghost">
+					{post.readingTime} minutes
+				</span>
 			</div>
 			<div>
 				<Content />
@@ -48,3 +43,14 @@ const { post: { Content }, post } = Astro.props;
 		</div>
 	</div>
 </Blog>
+
+<style>
+	.draft {
+		border-bottom: solid 10px;
+		border-image: repeating-linear-gradient(-55deg,
+				#000,
+				#000 20px,
+				#ffb101 20px,
+				#ffb101 40px) 10;
+	}
+</style>

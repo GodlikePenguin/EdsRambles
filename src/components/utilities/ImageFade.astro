@@ -4,6 +4,7 @@ const { src } = Astro.props;
 ---
 
 <div class="overflow-hidden relative mb-8" style="height: 32rem;">
-  <div class="h-full w-full absolute top-0 left-0" style="background: linear-gradient(to bottom, transparent, 75%, hsl(var(--b1)));"></div>
+  <div class="h-full w-full absolute top-0 left-0"
+    style="background: linear-gradient(to bottom, transparent, 75%, hsl(var(--b1)));"></div>
   <Img src={src} alt="an image" />
 </div>

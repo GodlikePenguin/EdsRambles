@@ -1,9 +1,10 @@
 ---
 import { nav } from "@data/nav"
 ---
+
 <div class="navbar bg-base-100">
   <div class="flex-1">
-    <a href="/" class="p-2 hover:border-b md:text-4xl font-bold flex gap-4 items-center">
+    <a href="/" class="p-2 hover:border-b md:text-4xl font-bold flex gap-4 items-center mb-px hover:mb-0">
       <span class="inline-block">💬</span>
       Ed's Rambles
     </a>
@@ -11,21 +12,27 @@ import { nav } from "@data/nav"
   <div class="flex-none">
     <ul class="menu menu-horizontal p-0 hidden md:flex">
       {nav.map(item => (
-        <li>
-          <a href={item.slug}>{item.title}</a>
-        </li>
+      <li>
+        <a href={item.slug}>{item.title}</a>
+      </li>
       ))}
     </ul>
-    <slot/>
+    <slot />
     <div class="dropdown dropdown-end md:hidden">
       <label tabindex={0} class="btn btn-ghost btn-square">
-        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
       </label>
       <ul tabindex={0} class="dropdown-content menu p-2 bg-base-200 rounded-box w-52 menu-compact">
         {nav.map(item => (
-          <li>
-            <a href={item.slug}>{item.title}</a>
-          </li>
+        <li>
+          <a href={item.slug}>{item.title}</a>
+        </li>
         ))}
       </ul>
     </div>

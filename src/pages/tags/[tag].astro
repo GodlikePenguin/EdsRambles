@@ -7,13 +7,13 @@ import Subtitle from "@components/utilities/Subtitle";
 export async function getStaticPaths() {
 	const markdownFiles = await Astro.glob('../../content/**/*.md');
 	const posts = published(markdownFiles);
-    const tags = posts.flatMap(p => p.tags ?? []);
-    const uniqueTags = Array.from(new Set(tags));
+	const tags = posts.flatMap(p => p.tags ?? []);
+	const uniqueTags = Array.from(new Set(tags));
 
 	return uniqueTags.map((tag) => {
 		return {
 			params: { tag: tag },
-			props: { }
+			props: {}
 		};
 	})
 }
@@ -26,8 +26,9 @@ const postsWithTag = posts.filter(p => p.tags?.includes(tag as string));
 ---
 
 <Blog>
-    <Subtitle>{tag}</Subtitle>
+	<Subtitle>{tag}</Subtitle>
 	<div class="grid grid-cols-2 gap-6 mt-8">
-		{postsWithTag.map((p) => <PostCard post={p} />)}
+		{postsWithTag.map((p) =>
+		<PostCard post={p} />)}
 	</div>
 </Blog>
