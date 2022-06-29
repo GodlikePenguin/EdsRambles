@@ -3,11 +3,11 @@ title: Websites you might not have heard of part 1 - Film and TV
 description: A look at some websites which compliment your media habits
 date: 2022-06-06
 setup: |
-  import ImageFade from "../../../components/utilities/ImageFade.astro"
+    import ImageFade from "../../../components/utilities/ImageFade.astro"
 tags:
-- Web
-- Film and TV
-- Links
+    - Web
+    - Film and TV
+    - Links
 ---
 
 It's really true, there is a website for everything, and whilst some are incredibly niche, there are others than can provide value to almost everyone. It's just a case of knowing they exist. This is the first post in a series aiming to take a look at websites that you might not have heard of, but I think you could gain some value from.
@@ -16,7 +16,7 @@ It's really true, there is a website for everything, and whilst some are incredi
 
 <ImageFade src="/src/content/posts/media-on-the-web/trakt.tv-1366x768.png" />
 
-As their tagline says: **Track**. **Discover**. **Share**. Trakt is a website that you can use to track your viewing habits across film and TV, rate the things you like, and discover new media to watch. Whilst Trakt is by no means the only site which can track your viewing progress, in my opinion it's the most fully featured, and has great integrations with other services like [Infuse](https://firecore.com/infuse), [Jellyfin](https://jellyfin.org/) and the [*Arr](https://wiki.servarr.com/) suite.
+As their tagline says: **Track**. **Discover**. **Share**. Trakt is a website that you can use to track your viewing habits across film and TV, rate the things you like, and discover new media to watch. Whilst Trakt is by no means the only site which can track your viewing progress, in my opinion it's the most fully featured, and has great integrations with other services like [Infuse](https://firecore.com/infuse), [Jellyfin](https://jellyfin.org/) and the [\*Arr](https://wiki.servarr.com/) suite.
 
 ## [JustWatch](https://www.justwatch.com/)
 
@@ -33,9 +33,7 @@ Furthermore, you can tell JustWatch what streaming services you have, and then s
 
 <ImageFade src="/src/content/posts/media-on-the-web/aftercredits.com-1366x768.png" />
 
-
-This site says whether a movie has an end credits seen or not, and if there are multiple scenes it says whether they're pre, during or post the main credits. Users can vote on whether they think the scene is worth staying around to watch, and if you don't care about spoilers, you can also see a text summary of what happens. This is essential for watching your next Marvel film in the cinema.
-
+This site says whether a movie has an end credits scene or not, and if there are multiple scenes it says whether they're pre, during or post the main credits. Users can vote on whether they think the scene is worth staying around to watch, and if you don't care about spoilers, you can also see a text summary of what happens. This is essential for watching your next Marvel film in the cinema.
 
 ## [TuneFind](https://www.tunefind.com/)
 
@@ -46,6 +44,5 @@ Ever been watching a show or movie and wanted to know what that song you just he
 ## [WornOnTV](https://wornontv.net/)
 
 <ImageFade src="/src/content/posts/media-on-the-web/wornontv.net-1366x768.png" />
-
 
 A similar idea to TuneFind but this time for clothes worn by characters in movies and shows. Can't say I've personally used it, but it's definitely a neat idea.

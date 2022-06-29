@@ -27,7 +27,7 @@ const postsWithTag = posts.filter(p => p.tags?.includes(tag as string));
 
 <Blog>
 	<Subtitle>{tag}</Subtitle>
-	<div class="grid grid-cols-2 gap-6 mt-8">
+	<div class="grid md:grid-cols-2 gap-6 mt-8">
 		{postsWithTag.map((p) =>
 		<PostCard post={p} />)}
 	</div>

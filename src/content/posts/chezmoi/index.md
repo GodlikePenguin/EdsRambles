@@ -27,10 +27,10 @@ This means I only need to write this script in one place, rather than having one
 if ! command -v brew &> /dev/null
 then
     echo "Installing Brew"
-    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ...
 fi
 
-brew_install git
+brew install git
 
 {{ else if eq .chezmoi.os "linux" -}}
 

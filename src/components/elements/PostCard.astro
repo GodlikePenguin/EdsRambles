@@ -8,7 +8,7 @@ const post: Post = Astro.props.post
 
 <div class="card shadow-xl bg-base-300 text-neutral-content hover:scale-105 transition-all h-128">
     <figure class="h-64 overflow-hidden">
-        <Img src={getCoverImagePath(post)} alt={post.title} />
+        <Img layout={"fill"} src={getCoverImagePath(post)} alt={post.title} />
     </figure>
     <div class="card-body">
         <h2 class="card-title text-2xl text-base-content font-bold">
