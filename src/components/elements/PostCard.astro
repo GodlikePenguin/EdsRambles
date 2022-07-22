@@ -21,7 +21,8 @@ const post: Post = Astro.props.post
         </p>
         <p class="text-md text-base-content/70">{post.description}</p>
         <div class="card-actions justify-end">
-            {post.tags?.map(tag => <a class="badge badge-outline hover:badge" href={`/tags/${tag}`}># {tag}</a>)}
+            {post.tags?.map(tag =>
+            <a class="badge badge-lg badge-outline hover:badge hover:badge-lg" href={`/tags/${tag}`}>#{tag}</a>)}
         </div>
     </div>
 </div>
